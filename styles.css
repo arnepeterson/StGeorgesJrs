@@ -462,6 +462,45 @@ a {
   color: var(--club-red);
 }
 
+.section-card__schedule {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(239, 229, 211, 0.35);
+}
+
+.section-card__schedule-header,
+.section-card__schedule-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1.2fr) minmax(92px, 0.8fr) minmax(0, 1.2fr);
+  gap: 14px;
+  padding: 12px 16px;
+}
+
+.section-card__schedule-header {
+  background: rgba(177, 18, 38, 0.08);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--club-red);
+}
+
+.section-card__schedule-row {
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.section-card__schedule-date,
+.section-card__schedule-club {
+  color: var(--ink);
+}
+
+.section-card__schedule-status {
+  font-weight: 700;
+}
+
 .section-card__list,
 .section-card__note,
 .section-card__media {
@@ -481,6 +520,21 @@ a {
   padding-left: 18px;
   position: relative;
   line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.section-card__list-title,
+.section-card__list-subtext {
+  display: block;
+}
+
+.section-card__list-title {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.section-card__list-subtext {
+  margin-top: 2px;
   color: var(--ink-soft);
 }
 
@@ -806,6 +860,16 @@ a {
 
   .section-card__badge {
     min-width: 0;
+  }
+
+  .section-card__schedule-header,
+  .section-card__schedule-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .section-card__schedule-header {
+    display: none;
   }
 
   .lightbox {

@@ -19,7 +19,7 @@ window.SITE_CONTENT = {
       kicker: "Section 01",
       title: "Welcome Message",
       media: {
-        src: "./Photos/peterson, jacob - portrait new.jpg",
+        src: "./Photos/peterson, jacob - portrait.jpeg",
         alt: "",
         placeholder: "Add a warm season-opening photo here",
         filename: ""
@@ -68,12 +68,20 @@ window.SITE_CONTENT = {
       id: "winter-recap",
       kicker: "Section 02",
       title: "Winter Recap",
-      media: {
+      media: [
+      {
         src: "./Photos/Junior 2026-001.jpg",
         alt: "",
         placeholder: "Add a winter training or team group photo here",
         filename: "2026 Junion High Performance Group"
       },
+      {
+        src: "./Photos/IMG_9348.jpeg",
+        alt: "",
+        placeholder: "Add a winter training or team group photo here",
+        filename: "2026 Little Dragons Winter Group"
+      },
+    ],
       summary:
         "",
       note: {
@@ -103,12 +111,13 @@ window.SITE_CONTENT = {
             "We’re excited to carry this momentum into the summer and continue building an even more advanced program for next winter."
         },
         {
-          type: "list",
-          items: [
-            "Update winter participation numbers",
-            "Update notable highlights or trips",
-            "Replace the featured group photo and caption"
-          ]
+          type: "heading",
+          text: "Little Dragons"
+        },
+        {
+          type: "paragraph",
+          text:
+            "Our Little Dragons Program also ran 16 sessions. Some juniors were getting into golf, while others are now ready for the High Performance Program next season. The juniors are very lucky to have our state-of-the-art winter golf facility all to themselves every Monday after school!"
         }
       ]
     },
@@ -190,16 +199,12 @@ window.SITE_CONTENT = {
   visible: true,
   links: [
     {
-      label: "Junior Opening",
-      href: "https://example.com/junior-opening"
-    },
-    {
       label: "Parent Child Tournament",
-      href: "https://example.com/parent-child"
+      href: "https://www.golfgenius.com/leagues/12461198938252254089"
     },
     {
       label: "Club Championship",
-      href: "https://example.com/club-championship"
+      href: "https://www.golfgenius.com/pages/12466275490174343838"
     }
   ]
 },
@@ -211,10 +216,22 @@ window.SITE_CONTENT = {
         {
           type: "list",
           items: [
-            "Junior Opening in the IGC: Sunday, May 3, drop-in 12:00 pm to 4:00 pm",
-            "Parent Child Tournament: Sunday, June 28, shotgun 2:00 pm, BBQ to follow",
-            "Junior (14-18) and Bantam (11-13) Club Championship: Wednesday, July 15 and Thursday, July 16, 36 holes stroke play",
-            "Dragonlings (10 and under) Club Championship: Wednesday, July 15 and Thursday, July 16, two 10-hole rounds"
+            {
+              title: "Junior Opening in the IGC",
+              subtext: "Sunday, May 3, drop-in 12:00 pm to 4:00 pm"
+            },
+            {
+              title: "Parent Child Tournament",
+              subtext: "Sunday, June 28, shotgun 2:00 pm, BBQ to follow"
+            },
+            {
+              title: "Junior (14-18) and Bantam (11-13) Club Championship",
+              subtext: "Wednesday, July 15 and Thursday, July 16, 36 holes stroke play"
+            },
+            {
+              title: "Dragonlings (10 and under) Club Championship",
+              subtext: "Wednesday, July 15 and Thursday, July 16, two 10-hole rounds"
+            }
           ]
         },
         {
@@ -224,7 +241,7 @@ window.SITE_CONTENT = {
         {
           type: "paragraph",
           text:
-            "Every Tuesday May 5 to September 8. Junior members must register each week through the event page on the St. George's app or website. Registration opens seven days in advance, and tee times are published on Monday for the Tuesday program."
+            "Every Tuesday afternoon from May 5 to September 8. Tee times are approximately 3:30 p.m. to 5:30 p.m. Junior members must register each week either through the event page on the St. George’s app or website, or by responding to the invite sent each week. Tee times are published the day before."
         },
         {
           type: "heading",
@@ -242,33 +259,95 @@ window.SITE_CONTENT = {
         {
           type: "paragraph",
           text:
-            "We have a busy schedule of matches this year with X clubs."
+            "We have a busy schedule of matches this year with 7 clubs."
         },
         {
           type: "heading",
           text: "Interclub Schedule"
         },
         {
-          type: "list",
+          type: "schedule",
           items: [
-            "Tuesday, June 24: Home vs TGC",
-            "Monday, June 30: Away at The National",
-            "Sunday, July 6: Away at Cutten Fields",
-            "Tuesday, July 8: Home vs Hamilton",
-            "Saturday, July 12: Away at Hamilton",
-            "Sunday, July 13: Away at Islington",
-            "Tuesday, July 15: Home vs Lambton",
-            "Wednesday and Thursday, July 16-17: Junior Club Championship",
-            "Tuesday, July 22: Home vs Islington",
-            "Sunday, July 27: Away at TGC",
-            "Thursday, July 31: Away at Lambton",
-            "Tuesday, August 5: Home vs Summit",
-            "Thursday, August 7: Away at Summit",
-            "Tuesday, August 12: Home vs Cutten Fields",
-            "Tuesday, August 19: Home vs The National",
-            "Thursday, August 21: Interclub away at Lambton",
-            "Sunday, August 24: VC Finals away at Islington",
-            "Tuesday, August 26: Home vs Westmount"
+            {
+              date: "Monday, June 22",
+              status: "Away",
+              club: "The National"
+            },
+            {
+              date: "Tuesday, June 23",
+              status: "Home",
+              club: "TGC"
+            },
+            {
+              date: "Friday, June 26",
+              status: "Away",
+              club: "TGC"
+            },
+            {
+              date: "Tuesday, June 30",
+              status: "Home",
+              club: "The National"
+            },
+            {
+              date: "Tuesday, July 7",
+              status: "Home",
+              club: "TBD"
+            },
+            {
+              date: "Thursday, July 9",
+              status: "Away",
+              club: "Lambton"
+            },
+            {
+              date: "Tuesday, July 14",
+              status: "Home",
+              club: "Hamilton"
+            },
+            {
+              date: "Saturday, July 18",
+              status: "Away",
+              club: "Hamilton"
+            },
+            {
+              date: "Tuesday, July 21",
+              status: "Home",
+              club: "Islington"
+            },
+            {
+              date: "Monday, July 27",
+              status: "Away",
+              club: "Cutten Fields"
+            },
+            {
+              date: "Tuesday, July 28",
+              status: "Home",
+              club: "Lambton"
+            },
+            {
+              date: "Tuesday, August 4",
+              status: "Home",
+              club: "TBD"
+            },
+            {
+              date: "Monday, August 10",
+              status: "Away",
+              club: "Islington"
+            },
+            {
+              date: "Tuesday, August 11",
+              status: "Home",
+              club: "Cutten Fields"
+            },
+            {
+              date: "Tuesday, August 18",
+              status: "Home",
+              club: "TBD"
+            },
+            {
+              date: "Tuesday, August 25",
+              status: "Home",
+              club: "Valley Cup Finals"
+            }
           ]
         },
         {
@@ -291,14 +370,13 @@ window.SITE_CONTENT = {
         },
         {
           type: "heading",
-          text: "Additional Competitions"
+          text: "Dragonlings U10 Interclub"
         },
         {
           type: "list",
           items: [
-            "Henderson Cup: girls event at Islington Golf Club on Tuesday, July 29",
-            "U10 Interclub Team: short-course events at Lambton",
-            "A registration form link appears in the 2025 booklet and should be replaced with the 2026 link"
+            "Thursday, August 6 at Lambton",
+            "TBD at Toronto Golf Club",
           ]
         }
       ]
@@ -334,7 +412,7 @@ window.SITE_CONTENT = {
         {
           type: "paragraph",
           text:
-            "Each session will be run by a PGA of Canada Golf Professional, 5-8 students. The price for the four-day golf school is $450. This includes 12 hours of instruction"
+            "Each session will be run by a PGA of Canada Golf Professional, 5-8 students. The price for the four-day golf school is $480. This includes 12 hours of instruction"
         },
         {
   type: "button",
@@ -374,9 +452,8 @@ window.SITE_CONTENT = {
         {
           type: "list",
           items: [
-            "Sundays, 3:00 pm to 4:00 pm",
+            "Sundays, 1:00 pm to 2:00 pm",
             "Cost: $35 per session",
-            "2025 dates ran from May 11 through August 24, with no clinic on June 22 and August 10"
           ]
         },
         {
@@ -391,9 +468,23 @@ window.SITE_CONTENT = {
         {
           type: "list",
           items: [
-            "Sundays, 4:30 pm to 5:30 pm",
+            "Sundays, 2:15 pm to 3:15 pm",
             "Cost: $35 per session",
-            "2025 dates matched the Tiny Dragons calendar, with no clinic on June 22 and August 10"
+          ]
+        },
+        {
+          type: "heading",
+          text: "Shared Dates for Tiny Dragons and Little Dragons"
+        },
+        {
+          type: "list",
+          items: [
+            "May: 10, 24, 31",
+            "June: 7, 14, 21",
+            "July: 5, 12, 26",
+            "August: 16, 23, 30",
+            "September: 13, 20, 27",
+            "October: 4, 11, 18"
           ]
         },
         {
@@ -405,25 +496,7 @@ window.SITE_CONTENT = {
           items: [
             "Thursdays, 6:00 pm to 7:30 pm",
             "Cost: $350",
-            "2025 dates: July 3, July 10, July 24, July 31, August 7, August 14, August 21"
-          ]
-        },
-        {
-          type: "heading",
-          text: "Teen Dragons (Ages 12-18)"
-        },
-        {
-          type: "paragraph",
-          text:
-            "An eight-week program for juniors who are looking to develop skills, learn, and practice."
-        },
-        {
-          type: "list",
-          items: [
-            "Mondays, 4:30 pm to 6:00 pm",
-            "Cost: $500",
-            "2025 dates included June 2, June 9, June 16, July 7, July 14, July 28, August 11, August 18, and August 25",
-            "No clinic on June 23, June 30, July 21, and August 4"
+            "July 2, July 9, July 23, July 30, August 6, August 20"
           ]
         }
       ]

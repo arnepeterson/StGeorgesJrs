@@ -33,8 +33,46 @@ function renderBlock(block) {
   }
 
   if (block.type === "list") {
-    const items = block.items.map((item) => `<li>${item}</li>`).join("");
+    const items = block.items
+      .map((item) => {
+        if (typeof item === "object" && item !== null) {
+          return `
+            <li>
+              <span class="section-card__list-title">${item.title || ""}</span>
+              ${item.subtext ? `<span class="section-card__list-subtext">${item.subtext}</span>` : ""}
+            </li>
+          `;
+        }
+
+        return `<li>${item}</li>`;
+      })
+      .join("");
     return `<ul class="section-card__list">${items}</ul>`;
+  }
+
+  if (block.type === "schedule") {
+    const rows = block.items
+      .map(
+        (item) => `
+          <div class="section-card__schedule-row">
+            <span class="section-card__schedule-date">${item.date || ""}</span>
+            <span class="section-card__schedule-status">${item.status || ""}</span>
+            <span class="section-card__schedule-club">${item.club || ""}</span>
+          </div>
+        `
+      )
+      .join("");
+
+    return `
+      <div class="section-card__schedule">
+        <div class="section-card__schedule-header">
+          <span>Date</span>
+          <span>Home/Away</span>
+          <span>Club</span>
+        </div>
+        ${rows}
+      </div>
+    `;
   }
 
   if (block.type === "button") {
@@ -192,8 +230,8 @@ content.sections.forEach((section, index) => {
     <div class="section-card__grid">
       <div class="section-card__body">${bodyMarkup}</div>
       <div class="section-card__side">
-        ${renderMedia(section.media)}
         ${renderNote(section)}
+        ${renderMedia(section.media)}
       </div>
     </div>
   `;
