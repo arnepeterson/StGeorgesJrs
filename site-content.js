@@ -18,6 +18,7 @@ window.SITE_CONTENT = {
       id: "Welcome Message",
       kicker: "Section 01",
       title: "Welcome Message",
+      sideOrder: "media-first",
       media: {
         src: "./Photos/peterson, jacob - portrait.jpeg",
         alt: "",
@@ -76,7 +77,7 @@ window.SITE_CONTENT = {
         filename: "2026 Junion High Performance Group"
       },
       {
-        src: "./Photos/IMG_9348.jpeg",
+        src: "./Photos/Image-1.jpg",
         alt: "",
         placeholder: "Add a winter training or team group photo here",
         filename: "2026 Little Dragons Winter Group"
@@ -177,7 +178,14 @@ window.SITE_CONTENT = {
       id: "events",
       kicker: "Section 04",
       title: "Events",
+
       media: [
+        {
+        src: "./Photos/75ED11BD-0ECA-40F3-AD3B-C32E4D315159 2.jpg",
+        alt: "",
+        placeholder: "Add an events collage, opening day, or tournament photo here",
+        filename: "2025 Club Championship Winners"
+      },
         {
         src: "./Photos/FullSizeRender 2.jpeg",
         alt: "",
@@ -190,6 +198,18 @@ window.SITE_CONTENT = {
         placeholder: "Add an events collage, opening day, or tournament photo here",
         filename: "2025 Dragonlings Club Championship"
       },
+        {
+          type: "video",
+          src: "./Photos/IMG_4434.mov",
+          poster: "",
+          filename: "Leo Johnson hitting out of the rough."
+      },
+        {
+        src: "./Photos/DC1CD3F8-4759-4ACE-9C51-8EC338E6429A.jpg",
+        alt: "",
+        placeholder: "Add an events collage, opening day, or tournament photo here",
+        filename: "U10 Interclub at Lambton"
+      },
       ],
       summary:
         "",
@@ -200,7 +220,7 @@ window.SITE_CONTENT = {
   links: [
     {
       label: "Parent Child Tournament",
-      href: "https://www.golfgenius.com/leagues/12461198938252254089"
+      href: "https://www.golfgenius.com/pages/12461199075523435073"
     },
     {
       label: "Club Championship",
@@ -357,12 +377,12 @@ window.SITE_CONTENT = {
         {
           type: "paragraph",
           text:
-            "Nine juniors were pre-qualified for the team based on the previous season. Qualifying for the final three spots took place over four 9-hole events during Junior League times in May, with the best three of four scores counting."
+            "Eight juniors were pre-qualified for the team based on the previous season. Qualifying for the final four spots take place over four 9-hole events during Junior League times in May, with the best three of four scores counting."
         },
         {
           type: "list",
           items: [
-            "Qualifying dates: May 6, May 13, May 20, and May 27",
+            "Qualifying dates: May 12, May 19, May 26, and June 2",
             "Boys: White tees",
             "Girls: Gold tees",
             "Even juniors outside the top 12 may still have opportunities to play interclub events"
@@ -371,6 +391,11 @@ window.SITE_CONTENT = {
         {
           type: "heading",
           text: "Dragonlings U10 Interclub"
+        },
+        {
+          type: "paragraph",
+          text:
+            "For our second year, we will have a U10 interclub, this year with two clubs: Lambton and TGC. Qualification for these interclubs will be based on Club Championship results."
         },
         {
           type: "list",
@@ -386,7 +411,7 @@ window.SITE_CONTENT = {
       kicker: "Section 05",
       title: "Camps",
       media: {
-        src: "./Photos/IMG_3983.jpeg",
+        src: "./Photos/IMG_6665.JPG",
         alt: "",
         placeholder: "Add a summer camp action photo here",
         filename: ""
@@ -425,19 +450,33 @@ window.SITE_CONTENT = {
       id: "coaching-programs",
       kicker: "Section 06",
       title: "Coaching Programs",
-      media: {
-        src: "./Photos/IMG_6426.JPG",
-        alt: "",
-        placeholder: "Add a clinic or lesson-group photo here",
-        filename: "Learning about course maintenance."
-      },
+      media: [
+        {
+          src: "./Photos/IMG_6426.JPG",
+          alt: "",
+          placeholder: "Add a clinic or lesson-group photo here",
+          filename: "Learning about course maintenance."
+        },
+        {
+          src: "./Photos/IMG_6160.JPG",
+          alt: "",
+          placeholder: "Add a second coaching programs photo here",
+          filename: "Caden McLinden at the range"
+        }
+      ],
       summary:
         "",
       note: {
-        title: "2026 Update Note",
+        title: "Program Sign Up",
         text:
-          "Review dates, pricing, age ranges, and any naming changes for Tiny Dragons, Little Dragons, Girls Night Out, Teen Dragons, and the Performance Group.",
-        visible: false
+          "Use the link below to register for coaching programs.",
+        visible: true,
+        links: [
+          {
+            label: "Coaching Programs Sign Up",
+            href: "https://forms.gle/KgfWEXUFPbhNy9766"
+          }
+        ]
       },
       blocks: [
         {
@@ -496,7 +535,7 @@ window.SITE_CONTENT = {
           items: [
             "Thursdays, 6:00 pm to 7:30 pm",
             "Cost: $350",
-            "July 2, July 9, July 23, July 30, August 6, August 20"
+            "July 2, July 9, July 17, July 23, July 30, August 6, August 14, August 20"
           ]
         }
       ]
@@ -506,10 +545,10 @@ window.SITE_CONTENT = {
       kicker: "Section 07",
       title: "Private Coaching",
       media: {
-        src: "",
+        src: "./Photos/IMG_4381.JPG",
         alt: "",
         placeholder: "Add a coaching or instruction photo here",
-        filename: "Photos/private-coaching.jpg"
+        filename: "Leo Johnson, Ben Fox, and Oliver Yik on the first hole."
       },
       summary:
         "",
@@ -528,8 +567,8 @@ window.SITE_CONTENT = {
           type: "list",
           items: [
             "Head of Golf Instruction: Mark Burke, mburke@stgeorges.org",
-            "Associate Golf Professionals: Jacob Peterson, Greg Harant",
-            "Assistant Golf Professional: Ryan Kennedy, Steve Ryan, Johnny Prescott"
+            "Associate Golf Professionals: Jacob Peterson, Greg Harant, Steve Ryan",
+            "Assistant Golf Professional: Ryan Kennedy, Johnny Prescott"
           ]
         },
         {
@@ -551,29 +590,49 @@ window.SITE_CONTENT = {
       kicker: "Section 08",
       title: "Retail",
       media: {
-        src: "",
+        src: "./Photos/IMG_2002.JPG",
         alt: "",
         placeholder: "Add a clubs, fitting, or golf shop image here",
-        filename: "Photos/equipment.jpg"
-      },
-      summary:
-        "",
-      note: {
-        title: "2026 Update Note",
-        text:
-          "Confirm whether the U.S. Kids Golf partnership and demo-club setup are unchanged for 2026.",
-        visible: true
+        filename: "Visit the shop!"
       },
       blocks: [
         {
-          type: "paragraph",
-          text:
-            "In partnership with U.S. Kids Golf, the St. George's Golf Shop provides a range of golf sets for every level of junior."
+          type: "heading",
+          text: "Girls"
         },
         {
-          type: "paragraph",
-          text:
-            "During Junior Opening, demo clubs of different sizes are available for juniors to test out."
+          type: "list",
+          items: [
+            "Lucky in Love",
+            "FootJoy"
+          ]
+        },
+        {
+          type: "heading",
+          text: "Boys"
+        },
+        {
+          type: "list",
+          items: [
+            "Holderness & Bourne",
+            "FootJoy"
+          ]
+        },
+        {
+          type: "heading",
+          text: "Accessories and Equipment"
+        },
+        {
+          type: "list",
+          items: [
+            "Junior Gloves",
+            "FootJoy Shoes",
+            "Ahead and Imperial headwear",
+            "Teddy bears",
+            "Yeti water bottles",
+            "TaylorMade golf clubs",
+            "U.S. Kids golf clubs"
+          ]
         }
       ]
     },
@@ -631,12 +690,20 @@ window.SITE_CONTENT = {
       id: "dress-code",
       kicker: "Section 10",
       title: "Dress Code",
-      media: {
-        src: "",
-        alt: "",
-        placeholder: "Add a polished junior golf attire photo here",
-        filename: "Photos/dress-code.jpg"
-      },
+      media: [
+        {
+          src: "./Photos/IMG_4413.JPG",
+          alt: "",
+          placeholder: "Add a polished junior golf attire photo here",
+          filename: "Riviera Lindholm, Soleil Lindholm, and Charlie Lucas"
+        },
+        {
+          src: "./Photos/IMG_6136.jpeg",
+          alt: "",
+          placeholder: "Add a second dress code photo here",
+          filename: "Liam Sands, James Duggan, Connor Sands, and Harrison Goluboff"
+        }
+      ],
       summary:
         "",
       note: {
@@ -693,10 +760,10 @@ window.SITE_CONTENT = {
       kicker: "Section 11",
       title: "Etiquette",
       media: {
-        src: "",
+        src: "./Photos/IMG_4539.JPG",
         alt: "",
         placeholder: "Add a course etiquette or junior golf action image here",
-        filename: "Photos/etiquette.jpg"
+        filename: "Leo Johnson behaving well on the green"
       },
       summary:
         "",

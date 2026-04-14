@@ -202,6 +202,17 @@ function renderNote(section) {
   `;
 }
 
+function renderSideContent(section) {
+  const noteMarkup = renderNote(section);
+  const mediaMarkup = renderMedia(section.media);
+
+  if (section.sideOrder === "media-first") {
+    return `${mediaMarkup}${noteMarkup}`;
+  }
+
+  return `${noteMarkup}${mediaMarkup}`;
+}
+
 content.sections.forEach((section, index) => {
   const navItem = document.createElement("li");
   const navLink = document.createElement("a");
@@ -223,15 +234,14 @@ content.sections.forEach((section, index) => {
       <div>
         <p class="section-card__kicker">${section.kicker}</p>
         <h3>${section.title}</h3>
-        <p class="section-card__summary">${section.summary}</p>
+        ${section.summary ? `<p class="section-card__summary">${section.summary}</p>` : ""}
       </div>
       <div class="section-card__badge">${String(index + 1).padStart(2, "0")}</div>
     </div>
     <div class="section-card__grid">
       <div class="section-card__body">${bodyMarkup}</div>
       <div class="section-card__side">
-        ${renderNote(section)}
-        ${renderMedia(section.media)}
+        ${renderSideContent(section)}
       </div>
     </div>
   `;

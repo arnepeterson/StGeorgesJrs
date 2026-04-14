@@ -424,6 +424,8 @@ a {
 .section-card__body {
   display: grid;
   gap: 14px;
+  align-content: start;
+  align-self: start;
 }
 
 .section-card__body p {
