@@ -1,6 +1,6 @@
 window.SITE_CONTENT = {
   seasonYear: "2026",
-  clubName: "St. George's Golf & Country Club",
+  clubName: "St. George's Golf Club",
   hero: {
     eyebrow: "St. George's Golf Club Junior Program",
     title: "Junior Fixture 2026",
@@ -74,7 +74,7 @@ window.SITE_CONTENT = {
         src: "./Photos/Junior 2026-001.jpg",
         alt: "",
         placeholder: "Add a winter training or team group photo here",
-        filename: "2026 Junion High Performance Group"
+        filename: "2026 Junior High Performance Group"
       },
       {
         src: "./Photos/Image-1.jpg",
@@ -200,7 +200,7 @@ window.SITE_CONTENT = {
       },
         {
           type: "video",
-          src: "./Photos/IMG_4434.mov",
+          src: "./Photos/IMG_4434.mp4",
           poster: "",
           filename: "Leo Johnson hitting out of the rough."
       },
@@ -311,7 +311,7 @@ window.SITE_CONTENT = {
             {
               date: "Tuesday, July 7",
               status: "Home",
-              club: "TBD"
+              club: "Summit"
             },
             {
               date: "Thursday, July 9",
@@ -357,6 +357,11 @@ window.SITE_CONTENT = {
               date: "Tuesday, August 11",
               status: "Home",
               club: "Cutten Fields"
+            },
+            {
+              date: "Thursday, August 13",
+              status: "Away",
+              club: "Summit"
             },
             {
               date: "Tuesday, August 18",
@@ -534,7 +539,7 @@ window.SITE_CONTENT = {
           type: "list",
           items: [
             "Thursdays, 6:00 pm to 7:30 pm",
-            "Cost: $350",
+            "Cost: $35 per session",
             "July 2, July 9, July 17, July 23, July 30, August 6, August 14, August 20"
           ]
         }
@@ -568,7 +573,7 @@ window.SITE_CONTENT = {
           items: [
             "Head of Golf Instruction: Mark Burke, mburke@stgeorges.org",
             "Associate Golf Professionals: Jacob Peterson, Greg Harant, Steve Ryan",
-            "Assistant Golf Professional: Ryan Kennedy, Johnny Prescott"
+            "Assistant Golf Professionals: Ryan Kennedy, Johnny Prescott"
           ]
         },
         {
@@ -633,6 +638,11 @@ window.SITE_CONTENT = {
             "TaylorMade golf clubs",
             "U.S. Kids golf clubs"
           ]
+        },
+        {
+          type: "paragraph",
+          text:
+            "If you have any questions about Junior clothing, email Amy MacRae (amacrae@stgeorges.org)."
         }
       ]
     },
@@ -687,8 +697,43 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      id: "dress-code",
+      id: "new-10-hole-scorecard",
       kicker: "Section 10",
+      title: "New 10 Hole Scorecard",
+      layout: "media-below",
+      media: [
+        {
+          src: "./Photos/IMG_2019.jpeg",
+          alt: "",
+          placeholder: "Paste the first scorecard photo link here",
+          filename: ""
+        },
+        {
+          src: "./Photos/IMG_2020.jpeg",
+          alt: "",
+          placeholder: "Paste the second scorecard photo link here",
+          filename: ""
+        }
+      ],
+      summary:
+        "",
+      note: {
+        title: "2026 Update Note",
+        text:
+          "Paste your two scorecard image links into the media fields for this section.",
+        visible: false
+      },
+      blocks: [
+        {
+          type: "paragraph",
+          text:
+            "You can find these scorecards in the starters hut and will be great to use for our Junior members and parents playing 10 holes."
+        }
+      ]
+    },
+    {
+      id: "dress-code",
+      kicker: "Section 11",
       title: "Dress Code",
       media: [
         {
@@ -757,7 +802,7 @@ window.SITE_CONTENT = {
     },
     {
       id: "etiquette",
-      kicker: "Section 11",
+      kicker: "Section 12",
       title: "Etiquette",
       media: {
         src: "./Photos/IMG_4539.JPG",

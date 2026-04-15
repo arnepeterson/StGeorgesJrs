@@ -240,10 +240,25 @@ content.sections.forEach((section, index) => {
     </div>
     <div class="section-card__grid">
       <div class="section-card__body">${bodyMarkup}</div>
-      <div class="section-card__side">
-        ${renderSideContent(section)}
-      </div>
+      ${
+        section.layout === "media-below"
+          ? ""
+          : `
+            <div class="section-card__side">
+              ${renderSideContent(section)}
+            </div>
+          `
+      }
     </div>
+    ${
+      section.layout === "media-below"
+        ? `
+          <div class="section-card__below-media">
+            ${renderMedia(section.media)}
+          </div>
+        `
+        : ""
+    }
   `;
 
   sectionList.appendChild(article);
