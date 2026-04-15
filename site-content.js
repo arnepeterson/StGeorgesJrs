@@ -647,8 +647,43 @@ window.SITE_CONTENT = {
       ]
     },
     {
-      id: "code-of-conduct",
+      id: "new-10-hole-scorecard",
       kicker: "Section 09",
+      title: "New 10 Hole Scorecard",
+      layout: "media-below",
+      media: [
+        {
+          src: "./Photos/IMG_2019.jpeg",
+          alt: "",
+          placeholder: "Paste the first scorecard photo link here",
+          filename: ""
+        },
+        {
+          src: "./Photos/IMG_2020.jpeg",
+          alt: "",
+          placeholder: "Paste the second scorecard photo link here",
+          filename: ""
+        }
+      ],
+      summary:
+        "",
+      note: {
+        title: "2026 Update Note",
+        text:
+          "Paste your two scorecard image links into the media fields for this section.",
+        visible: false
+      },
+      blocks: [
+        {
+          type: "paragraph",
+          text:
+            "You can find these scorecards in the starters hut and will be great to use for our Junior members and parents playing 10 holes."
+        }
+      ]
+    },
+    {
+      id: "code-of-conduct",
+      kicker: "Section 10",
       title: "Code of Conduct",
       media: [
         {
@@ -693,41 +728,6 @@ window.SITE_CONTENT = {
           type: "paragraph",
           text:
             "While at St. George’s all WCD’s are to be switched to silent mode as use of these devices must not detract from other member’s enjoyment of the golf course, the clubhouse or the property. Members may also not walk around with ear buds for telephone or music on the golf course, practice or in the clubhouse. Cell phones can be used for conversation in the parking lot and the junior locker rooms. Cell phones may not be at the main entrance to the clubhouse, or anywhere in the clubhouse, with the exception of rooms that have been booked through the club’s Catering Office for a private meeting. Cell phone use for conversation is also prohibited on the golf course and practice facilities. While email and text messaging functions may be used anywhere in the clubhouse or on the golf course, members should be considerate of others and use their WCD with discretion."
-        }
-      ]
-    },
-    {
-      id: "new-10-hole-scorecard",
-      kicker: "Section 10",
-      title: "New 10 Hole Scorecard",
-      layout: "media-below",
-      media: [
-        {
-          src: "./Photos/IMG_2019.jpeg",
-          alt: "",
-          placeholder: "Paste the first scorecard photo link here",
-          filename: ""
-        },
-        {
-          src: "./Photos/IMG_2020.jpeg",
-          alt: "",
-          placeholder: "Paste the second scorecard photo link here",
-          filename: ""
-        }
-      ],
-      summary:
-        "",
-      note: {
-        title: "2026 Update Note",
-        text:
-          "Paste your two scorecard image links into the media fields for this section.",
-        visible: false
-      },
-      blocks: [
-        {
-          type: "paragraph",
-          text:
-            "You can find these scorecards in the starters hut and will be great to use for our Junior members and parents playing 10 holes."
         }
       ]
     },
