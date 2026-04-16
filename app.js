@@ -12,6 +12,7 @@ document.getElementById("sidebar-summary").textContent = content.summary;
 
 const navList = document.getElementById("section-nav");
 const sectionList = document.getElementById("section-list");
+const closingMessage = document.getElementById("closing-message");
 const checklist = document.getElementById("editor-checklist");
 const siteShell = document.getElementById("site-shell");
 const passwordGate = document.getElementById("password-gate");
@@ -263,6 +264,14 @@ content.sections.forEach((section, index) => {
 
   sectionList.appendChild(article);
 });
+
+if (closingMessage && content.closingStatement) {
+  closingMessage.innerHTML = `
+    <p class="closing-message__eyebrow">${content.closingStatement.eyebrow || ""}</p>
+    <h2 class="closing-message__title">${content.closingStatement.title || ""}</h2>
+    <p class="closing-message__text">${content.closingStatement.text || ""}</p>
+  `;
+}
 
 if (checklist && Array.isArray(content.editorChecklist)) {
   content.editorChecklist.forEach((item) => {

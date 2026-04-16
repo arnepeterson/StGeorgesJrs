@@ -13,6 +13,12 @@ window.SITE_CONTENT = {
     "",
   description:
     "Each section uses the real booklet header and can hold paragraphs, mini-headings, and lists. That makes it much easier to keep the familiar structure from the PDF while updating the content in a web-friendly format.",
+  closingStatement: {
+    eyebrow: "",
+    title: "THANK YOU",
+    text:
+      "We look forward to welcoming you back and continuing to grow the game together!"
+  },
   sections: [
     {
       id: "Welcome Message",
@@ -727,7 +733,7 @@ window.SITE_CONTENT = {
         {
           type: "paragraph",
           text:
-            "While at St. George’s all WCD’s are to be switched to silent mode as use of these devices must not detract from other member’s enjoyment of the golf course, the clubhouse or the property. Members may also not walk around with ear buds for telephone or music on the golf course, practice or in the clubhouse. Cell phones can be used for conversation in the parking lot and the junior locker rooms. Cell phones may not be at the main entrance to the clubhouse, or anywhere in the clubhouse, with the exception of rooms that have been booked through the club’s Catering Office for a private meeting. Cell phone use for conversation is also prohibited on the golf course and practice facilities. While email and text messaging functions may be used anywhere in the clubhouse or on the golf course, members should be considerate of others and use their WCD with discretion."
+            "While at St. George’s all WCD’s are to be switched to silent mode as use of these devices must not detract from other member’s enjoyment of the golf course, the clubhouse or the property. Members may also not walk around with ear buds for telephone or music on the golf course, practice or in the clubhouse. Cell phones can be used for conversation in the parking lot and the junior locker rooms. Cell phones may not be used at the main entrance to the clubhouse, or anywhere in the clubhouse, with the exception of rooms that have been booked through the club’s Catering Office for a private meeting. Cell phone use for conversation is also prohibited on the golf course and practice facilities. While email and text messaging functions may be used anywhere in the clubhouse or on the golf course, members should be considerate of others and use their WCD with discretion."
         }
       ]
     },
@@ -831,7 +837,8 @@ window.SITE_CONTENT = {
             "Do not improve your lie by bending branches or parting grass",
             "Let faster players go through",
             "Shout 'FORE' if a ball may strike another player",
-            "Dispose of wrappers and waste in garbage or recycling containers"
+            "Dispose of wrappers and waste in garbage or recycling containers",
+            "Fix ball marks on the green"
           ]
         }
       ]
