@@ -25,7 +25,7 @@ const lightboxVideo = document.getElementById("lightbox-video");
 const lightboxCaption = document.getElementById("lightbox-caption");
 const lightboxClose = document.getElementById("lightbox-close");
 
-const PAGE_PASSWORD = "stgeorges2026";
+const PAGE_PASSWORD = "dragons";
 const PASSWORD_STORAGE_KEY = "junior-fixture-2026-unlocked";
 
 function renderBlock(block) {
